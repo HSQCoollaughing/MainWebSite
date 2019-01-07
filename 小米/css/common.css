@@ -1,0 +1,65 @@
+body {
+    background: #fff;
+    color: #333;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif
+}
+
+/*版心*/
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/*链接样式*/
+a {
+    text-decoration: none;
+}
+
+/*无序列表*/
+ul {
+    list-style: none;
+
+}
+
+/*浮动*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*清除浮动*/
+.clearfix::after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*按钮通用*/
+
+.btn {
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ff6700;
+    color: #fff !important;
+}
+
+/*隐藏*/
+.hide{
+    display: none !important;
+}

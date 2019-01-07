@@ -5,9 +5,523 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>小米</title>
+    <title>小米商城 - 小米MIX 3、小米8、红米6 Pro、小米电视官方网站</title>
+
+    <!--以下是方便SEO-->
+    <meta name="description" content="小米商城直营小米公司旗下所有产品，囊括小米手机系列小米MIX 3、小米8、小米Note 3，
+    红米手机系列红米5 Plus、红米6 Pro，智能硬件，配件及小米生活周边，同时提供小米客户服务及售后支持。">
+    <meta name="keywords" content="小米,小米8,小米Note3,红米5Plus,小米MIX3,小米商城">
+    <!--网站icon-->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/headerbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+<!--头部导航开始-->
+<div class="site-topbar">
+    <div class="container">
+        <!--左侧导航列表-->
+        <div class="topbar-nav">
+            <a href="//www.mi.com/index.html">小米商城</a>
+            <span class="sep">|</span>
+            <a href="https://www.miui.com/" target="_blank">MIUI</a>
+            <span class="sep">|</span>
+            <a href="https://iot.mi.com/index.html" target="_blank">IoT</a>
+            <span class="sep">|</span>
+            <a href="https://i.mi.com/" target="_blank">云服务</a>
+            <span class="sep">|</span>
+            <a href="https://jr.mi.com?from=micom" target="_blank">金融</a>
+            <span class="sep">|</span>
+            <a href="https://youpin.mi.com/" target="_blank">有品</a>
+            <span class="sep">|</span>
+            <a href="https://shuidi.mi.com/" target="_blank">小爱开放平台</a>
+            <span class="sep">|</span>
+            <a href="https://b.mi.com/?client_id=180100031058&masid=17409.0358" target="_blank">政企服务</a>
+            <span class="sep">|</span>
+            <a href="javascript:;" target="_blank">资质证照</a>
+            <span class="sep">|</span>
+            <a href="javascript:;" target="_blank">政企服务</a>
+            <span class="sep">|</span>
+            <a href="https://www.mi.com/aptitude/list/" target="_blank">协议规则</a>
+            <span class="sep">|</span>
+            <a href="//www.mi.com/appdownload/" target="_blank" id="J_downloadapp">
+                下载app
+                <!--app二维码-->
+                <span class="app-qrcode">
+                    <em></em>
+                    <img src="./images/download.png" alt="">
+                    <span>小米商城APP</span>
+                </span>
+            </a>
+            <span class="sep">|</span>
+            <a href="javascript:;">Select Region</a>
+        </div>
 
+        <!--mini购物车-->
+
+        <div class="topbar-cart-mini ">
+            <a href="javascript:;" class="cart-mini">
+                <i class="fa fa-shopping-cart fa-lg"></i>
+                购物车
+                <span>(2)</span>
+            </a>
+
+            <div class="cart-menu" id="J_miniCartMenu">
+                <ul class="cart-list">
+                    <li class="cart-product-item clearfix">
+                        <a href="javascript:;" class="cart-product-img">
+                            <img src="./images/product/pms_1540429657.8272281.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="name">小米MIX 3 全网通版 8GB内存 黑色 128GB</a>
+                        <span class="price">3599元 × 1</span>
+                        <a href="javascript:;" class="btn-del J_delItem">
+                            <i class="fa fa-close "></i>
+                        </a>
+                    </li>
+
+                    <li class="cart-product-item clearfix">
+                        <a href="javascript:;" class="cart-product-img">
+                            <img src="./images/product/pms_1540429657.8272281.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="name">小米MIX 3 全网通版 8GB内存 黑色 128GB</a>
+                        <span class="price">3599元 × 1</span>
+                        <a href="javascript:;" class="btn-del J_delItem">
+                            <i class="fa fa-close "></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cart-total clearfix">
+                    <p class="total-info">
+                        <span>共2件商品</span><br>
+                        <span class="price">5598元</span>
+                    </p>
+                    <a href="javascript:;" class="btn btn-primary">去购物车结算</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--右侧用户信息-->
+    <div class="topbar-info">
+        <a href="javascript:;">登录</a>
+        <span class="sep">|</span>
+        <a href="javascript:;">注册</a>
+        <span class="sep">|</span>
+        <span class="message">
+                <a href="javascript:;">消息通知</a>
+            </span>
+    </div>
+
+
+</div>
+<!--头部导航结束-->
+
+<!--首页导航开始-->
+<div class="site-header">
+    <div class="container ">
+        <!--logo-->
+        <div class="header-logo">
+            <a href="javascript:;" class="logo ir">小米官网</a>
+        </div>
+
+        <!--导航-->
+        <div class="header-nav">
+            <ul class="nav-list clearfix">
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>小米手机</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>红米</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>电视</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>笔记本</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>家电</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>新品</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>路由器</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>智能硬件</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>服务</span>
+                    </a>
+                </li>
+                <li class="nav-list-item fl">
+                    <a href="javascript:;" class="link">
+                        <span>社区</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--搜索-->
+        <div class="header-search" method="get">
+            <form action="#" class="search-form " id="J_searchForm">
+                <label for="search" class="hide">站内搜索</label>
+                <input type="search" class="search-text" id="search" name="keyword" autocomplete="off"
+                       data-search-config="{'defaultWords':[{'Key':'小米6X','Rst':6},{'Key':'小米MIX 2S','Rst':5},{'Key':'黑鲨游戏手机','Rst':3},{'Key':'红米Note 5','Rst':6},{'Key':'红米5A','Rst':13},{'Key':'小米电视4C','Rst':5},{'Key':'电视32英寸','Rst':3},{'Key':'笔记本pro','Rst':5},{'Key':'空气净化器','Rst':11},{'Key':'净水器','Rst':8}]}">
+                <button class="search-btn">
+                    <i class="fa fa-search " style="font-size:24px;color:#333; font-weight:300;"></i>
+                </button>
+                <div class="search-hot-words">
+                    <a href="javascript:;">小米8</a>
+                    <a href="javascript:;">小米MIX 2S</a>
+                    <a href="javascript:;">洗烘一体机</a>
+                </div>
+
+                <div class="keywords-list hide " id="J_keywordList">
+                    <ul class="result-list">
+                        <li class="result-list-item">
+                            <a href="javascript:;">
+                                小米6X
+                                <span class="result">约有6件</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--首页导航结束-->
+
+
+<!--轮播图开始-->
+<div class="home-hero-container">
+    <div class="container">
+
+        <div class="home-hero-slider">
+            <!--图片-->
+            <ul class="slider-list clearfix">
+                <li class="slider-list-item fl">
+                    <a href="javascript:;">
+                        <img src="./images/banner/xmad_154592128461_jKUWy.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slider-list-item fl">
+                    <a href="javascript:;">
+                        <img src="./images/banner/xmad_15452976609747_CYJQj.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slider-list-item fl">
+                    <a href="javascript:;">
+                        <img src="./images/banner/xmad_15456576627772_VELvh.jpg" alt="">
+                    </a>
+                </li>
+                <li class="slider-list-item fl">
+                    <a href="javascript:;">
+                        <img src="./images/banner/xmad_15468264816429_nprRO.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="site-category">
+                <ul class="home-nav-list">
+                    <li class="home-nav-item">
+
+                        <a href="" class="title">
+                            手机 电话卡
+                            <i> > </i>
+                        </a>
+
+                        <div class="children clearfix">
+                            <ul class="children-list children-list-col children-list-col-1">
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-2">
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-2">
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="children-list children-list-col children-list-col-2">
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/mix3-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米MIX 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">
+                                        <img src="./images/thumbs/qingchun-80.png" alt="" width="40" height="40">
+                                        <span class="text">小米8 青春版</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="home-nav-item">
+                        <a href=""  class="title">
+                            电视 盒子
+                            <i> > </i>
+                        </a>
+
+                    </li>
+                    <li class="home-nav-item">
+                        <a href=""  class="title">
+                            笔记本 平板
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            家电 插线板
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            出行 穿戴
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            智能 路由器
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            电源 配件
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            健康 儿童
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            耳机 音箱
+                            <i> > </i>
+                        </a>
+                    </li>
+                    <li class="home-nav-item">
+
+                        <a href=""  class="title">
+                            生活 箱包
+                            <i> > </i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--控制-->
+            <div class="ui-controls">
+                <!--小圆点-->
+                <div class="ui-pager clearfix">
+                    <div class="ui-pager-item now">
+                        <a href class="ui-pager-link">1</a>
+                    </div>
+                    <div class="ui-pager-item">
+                        <a href class="ui-pager-link">2</a>
+                    </div>
+                    <div class="ui-pager-item">
+                        <a href class="ui-pager-link">3</a>
+                    </div>
+                    <div class="ui-pager-item">
+                        <a href class="ui-pager-link">4</a>
+                    </div>
+                    <div class="ui-pager-item">
+                        <a href class="ui-pager-link">5</a>
+                    </div>
+                </div>
+
+                <!--方向-->
+                <div class="ui-controls-direction">
+                    <a href="javascript:;" class="ui-prev">
+                        <
+                    </a>
+                    <a href="javascript:;" class="ui-next">
+                        >
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="home-hero-sub">
+
+        </div>
+    </div>
+</div>
+<!--轮播图结束-->
 </body>
 </html>
